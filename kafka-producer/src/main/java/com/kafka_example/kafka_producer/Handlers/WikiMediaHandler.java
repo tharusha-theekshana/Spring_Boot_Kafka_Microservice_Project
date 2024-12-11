@@ -30,8 +30,8 @@ public class WikiMediaHandler implements EventHandler {
 
     @Override
     public void onMessage(String s, MessageEvent messageEvent) throws Exception {
+        System.out.println(String.format("Event data --> %s", messageEvent.getData()));
         kafkaTemplate.send(topic,messageEvent.getData());
-//        log.info(String.format("Event data --> %s", messageEvent.getData()));
     }
 
     @Override
