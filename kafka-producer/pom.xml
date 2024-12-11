@@ -54,6 +54,33 @@
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--        Read realtime event media-->
+		<dependency>
+			<groupId>com.launchdarkly</groupId>
+			<artifactId>okhttp-eventsource</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+
+
+		<!--        Deal with JSONs-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.18.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.18.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>5.0.0-alpha.14</version>
+		</dependency>
 	</dependencies>
 
 	<build>
